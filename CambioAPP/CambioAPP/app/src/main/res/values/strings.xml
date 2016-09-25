@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CambioAPP</string>
+    <string name="textview">TextView</string>
+
+
+    <string name="valor">Insira o valor em R$</string>
+    <string name="Converter">Converter</string>
+
+    <string-array name="s_moedas">
+
+        <item>Dolar Americano</item>
+        <item>Peso Argentino</item>
+
+    </string-array>
+
+</resources>
