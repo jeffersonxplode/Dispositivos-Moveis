@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CadastramentoAPP</string>
+    <string name="textview">TextView</string>
+
+    <string-array name="diretorias">
+
+        <item>DIATINF</item>
+        <item>DIACON</item>
+        <item>DIAREN</item>
+        <item>DIACIN</item>
+        <item>DIAC</item>
+
+    </string-array>
+
+    <string-array name="cursos">
+
+        <item>Analise de Sistemas</item>
+        <item>Comercio Exterior</item>
+        <item>Administração</item>
+        <item>Eletronica</item>
+        <item>Edificações</item>
+        <item>Geologia</item>
+        <item>Fisica</item>
+        <item>Gestao Ambiental</item>
+        <item>Matematica</item>
+
+    </string-array>
+
+</resources>
