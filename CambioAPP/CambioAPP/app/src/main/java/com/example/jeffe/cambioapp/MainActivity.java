@@ -9,6 +9,7 @@ import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -44,19 +45,24 @@ public class MainActivity extends AppCompatActivity {
                 double valor = Double.parseDouble(Valor.getText().toString());
                 String item = moedas.getSelectedItem().toString();
 
-                if (item.equals("Dolar Americano")) {
+                if(valor == 0){
 
-                    double total = valor / 3.2448;
-                    Resultado.setText(String.format("%f", total));
-                }
-
-                else if(item.equals("Peso Argentino")){
-
-                    double total = valor / 0.2140;
-                    Resultado.setText(String.format("%f",total));
+                    Toast.makeText(getApplicationContext(),"Digite um valor diferente de 0", Toast.LENGTH_SHORT).show();
 
                 }
+                else {
 
+                    if (item.equals("Dolar Americano")) {
+
+                        double total = valor / 3.2448;
+                        Resultado.setText(String.format("%f", total));
+                    } else if (item.equals("Peso Argentino")) {
+
+                        double total = valor / 0.2140;
+                        Resultado.setText(String.format("%f", total));
+
+                    }
+                }
             }
         };
 
