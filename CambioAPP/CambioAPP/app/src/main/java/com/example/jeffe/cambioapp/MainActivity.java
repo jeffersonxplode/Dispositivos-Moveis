@@ -19,7 +19,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class MainActivity extends AppCompatActivity {
 
     Spinner moedas;
-    private Button button;
+    private Button ConverterBtn;
     private EditText Valor;
     private EditText Resultado;
     /**
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Valor = (EditText) findViewById(R.id.valor);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.s_moedas, android.R.layout.simple_spinner_item);
         moedas.setAdapter(adapter);
-        button = (Button) findViewById(R.id.button);
+        ConverterBtn = (Button) findViewById(R.id.ConverterBtn);
         OnClickListener buttonListener = new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        button.setOnClickListener(buttonListener);
+        ConverterBtn.setOnClickListener(buttonListener);
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
